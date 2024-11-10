@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-img">
+        <div class="resume-container">
+            <!-- Personal Information -->
+            <section class="personal-info">
+                <img src="/asif.jpg" alt="Profile Picture" class="profile-pic">
+                <h1>Asif Hussain</h1>
+            </section>
+            <!-- Personal Information Section -->
+            <button onclick="toggleSection('personal')">Personal Information</button>
+            <section class="personal" id="personal-section">
+                <h2>Personal Information</h2>
+                <p>Father Name: Mohammad Aslam</p>
+                <p>Nationalty: Pakistani</p>
+                <p>Marital Satus: Married</p>
+                <p>Address Location:Orangi Town Karachi</p>
+                <span id="education-visibility" class="visibility-status">Yes</span>
+            </section>
+
+
+            <!-- Qualification Section -->
+            <button onclick="toggleSection('qualification')">Qualification</button>
+            <section class="qualification" id="qualification-section">
+                <h2>Qualification</h2>
+                <p>MBA in Marketing </p>
+                <p>Indus University - 2018</p>
+                <p>Graduation in 2013</p>
+                <span id="qualification-visibility" class="visibility-status">Yes</span>
+            </section>
+          
+ 
+            <!-- Skills Section -->
+           <button onclick="toggleSection('skills')">Coding Skills</button>
+            <section class="skills" id="skills-section">
+                <h2>Coding Skills</h2>
+                <ul>
+                    <li>Wordpress <img src="/wordpress.png" alt="JavaScript Logo" class="skill-logo"></li>
+                    <li>HTML <img src="/HTML5_logo.png" alt="JavaScript Logo" class="skill-logo"></li>
+                    <li>CSS <img src="/CSS-Logo.png" alt="JavaScript Logo" class="skill-logo"></li>
+                    <li>typeScript <img src="/typescript-logo.png" alt="JavaScript Logo" class="skill-logo"></li>
+                    <li>Next.js <img src="/nodejs.png" alt="JavaScript Logo" class="skill-logo"></li>
+
+                </ul>
+                <span id="skills-visibility" class="visibility-status">Yes</span>
+            </section>
+            
+
+            <!-- Work Experience Section -->
+            <button onclick="toggleSection('work-experience')">Work Experience</button>
+            <section class="work-experience" id="work-experience-section">
+                <h2>Work Experience</h2>
+                <p>Front End Developer Fresher.</p>
+                <p>Jan 2023 - Present</p>
+                <span id="work-experience-visibility" class="visibility-status">Yes</span>
+            </section>
+
+
+                        <!-- Contact Section -->
+                        <button onclick="toggleSection('contact')">Contact Me</button>
+
+                        <section class="contact" id="contact-section">
+                            <h2>Contact Me</h2>
+                            <p>asif8063@gmail.com | +92 311 2961353 </p>
+            
+                            <span id="contact-visibility" class="visibility-status">Yes</span>
+                        </section>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+
+</body>
+</html>

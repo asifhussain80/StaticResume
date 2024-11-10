@@ -1,0 +1,114 @@
+/* Basic and responsive styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-image: url("/pic03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    background-size:0;
+    background-position: center;
+    background-image: url("");
+    background-repeat: no-repeat;
+}
+
+.resume-container {
+    width: 150%;
+    padding: 20px;
+    background-color: rgba(17, 168, 176, 0.489);
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+ul {
+    list-style-type: none; 
+    padding: 0;            
+    margin: 0;             
+}
+
+
+section {
+    margin-bottom: 20px;
+    opacity: 1;
+    text-align: center;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.visibility-status {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    color: rgb(3, 92, 3);
+}
+
+button {
+    display: block;
+    margin: 0 auto 15px auto;
+    padding: 8px 16px;
+    font-size: 20px;
+    border: none;
+    background-color: #ff00d0;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #b30048;
+}
+
+.skill-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: right;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .resume-container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
